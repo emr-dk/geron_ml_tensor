@@ -44,3 +44,11 @@ $$m = instances,\\
 \bm{x} = vector, \\
 \bm{X} = matrix, \\
 h(x) = \text{prediction function / hypothesis}$$
+
+### Normalising data
+Outliers can have a large effect on the values the are output when performing standardization. Additionally, heavy tailed data should be transformed to a more symmetrical distribution (for instance by taking the ln of a power law dsitribution).
+Bucketizing data can also be a way of standardising it. This is also a good way of handling multimodal distributions.
+
+min-max scaling: Each attributes values are shifted and rescaled so they range from 0 to 1. This is done by subtracing the min value and dividing by max - min. 
+
+standardisation: Values have the mean subtracted (i.e. zero mean) then divide the result by the standard deviation (i.e. standard deviation of 1)
