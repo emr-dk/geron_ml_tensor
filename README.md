@@ -1,10 +1,13 @@
 ### Overfitting
 When your model performs well on the training data, but does not generalize well. For instance by having too many parameters in play.
 
-This can be mitigated by _regularization_. The amount of _regularization_ is controlled by a **hyperparameter**
+This can be mitigated by _regularization_ (constraining). The amount of _regularization_ is controlled by a **hyperparameter**. 
+It can also be done by simplifying the model or getting more data. 
 
 ### Underfitting
 This occurs when the model is too simple to learn the structure of the data. If for instance you are trying to fit a linear model to a subject / phenomenon that is non-linear.
+
+Either the features do not provide enough information to make good predictions, or the model is not powerful enough.
 
 ### Hyperparameter
 A parameter of the learning algorithm, not of the model. 
