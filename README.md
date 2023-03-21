@@ -55,3 +55,17 @@ Bucketizing data can also be a way of standardising it. This is also a good way 
 min-max scaling: Each attributes values are shifted and rescaled so they range from 0 to 1. This is done by subtracing the min value and dividing by max - min. 
 
 standardisation: Values have the mean subtracted (i.e. zero mean) then divide the result by the standard deviation (i.e. standard deviation of 1)
+
+### Shuffling the training set
+Some times it is relevant to shuffle the training set. This is important as it ensures that all cross-validation folds will be similar. Some ML algorithms are also sensitive to the order of the training instances and perform poorly if there are many similar ones in a row. 
+
+### Precision and recall
+$$
+\text{precision} = \frac{TP}{TP+FP}
+$$
+
+$$
+\text{recall} = \frac{TP}{TP+FN}
+$$
+
+Increasing recall reduces precision and vice-versa. The precision/recall trade-off.
